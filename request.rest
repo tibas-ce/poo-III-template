@@ -1,0 +1,39 @@
+GET http://localhost:3003/users
+Content-Type: application/json
+###
+
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "id":"u003", 
+    "name":"Ciclana", 
+    "email":"ciclana@email.com", 
+    "password":"ciclana123"
+}
+###
+
+GET http://localhost:3003/accounts
+Content-Type: application/json
+###
+
+GET http://localhost:3003/accounts/a001/balance
+Content-Type: application/json
+###
+
+POST http://localhost:3003/accounts
+Content-Type: application/json
+
+{
+    "id":"a003",
+    "ownerId":"u003", 
+}
+###
+
+PUT http://localhost:3003/accounts/a001/balance
+Content-Type: application/json
+
+{
+    "value":30
+}
+###
